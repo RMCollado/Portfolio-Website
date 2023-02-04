@@ -1,9 +1,10 @@
-import smtplib, ssl
+import smtplib
+import os
 
 
 def send_email(message):
     username = "richcolladopydev@gmail.com"
-    password = "zrjvrsgkkvegkioy"
+    password = os.getenv("PYDEVEMAILPASSWORD")
 
     receiver = "richcolladopydev@gmail.com"
 
